@@ -16,5 +16,9 @@
 ## Project Result
 #### 프로젝트 다이어그램
 ![그림1](https://user-images.githubusercontent.com/50908416/69917130-13f26200-14a6-11ea-8c36-b8e7088f3ec3.png)
+#### 이미지 전처리
+![그림3](https://user-images.githubusercontent.com/50908416/69917136-22407e00-14a6-11ea-873f-f6431a21b1d4.png)
+#### 디지털 텍스트로 변환
+![그림4](https://user-images.githubusercontent.com/50908416/69917138-240a4180-14a6-11ea-96c6-2d36555c882f.png)
 
 
