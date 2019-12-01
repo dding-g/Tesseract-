@@ -1,6 +1,7 @@
 # Hallym University [시스템 프로그래밍]
 ## Subject
-#### RasberryPi 4 Cluster, Tesseract, OpenCV, Py-hanspell 을 이용하여 사진속의 텍스트를 디지털 텍스트로 변환후 맞춤법 검사하기
+#### RasberryPi 4 Cluster, Tesseract, OpenCV, Py-hanspell 을 이용하여 
+#### 사진속의 텍스트를 디지털 텍스트로 변환후 맞춤법 검사하기
 ## Developer
 #### 조명근(영상처리, Tesseract) 
 #### 이용하(클러스터 구성 및 맞춤법 검사) 
