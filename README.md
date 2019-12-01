@@ -15,6 +15,16 @@
 #### 클러스터는 전반적인 연산을 담당하며 낮은 가격에 최대한의 효율을 도출해 내기 위해 구성하였다. 
 ## Project Result
 #### 프로젝트 다이어그램
-
-
+![다이어그램](https://user-images.githubusercontent.com/50908416/69917891-6d5e8f00-14ae-11ea-98cc-e374f0e56e63.png)
+#### 원본 파일
+![원본](https://user-images.githubusercontent.com/50908416/69917893-6df72580-14ae-11ea-84a7-58eed32f9519.jpg)
+#### 전처리 후 파일
+![전처리](https://user-images.githubusercontent.com/50908416/69917894-6e8fbc00-14ae-11ea-8643-b1f7602b5f32.PNG)
+#### 결과물
+![최종 결과](https://user-images.githubusercontent.com/50908416/69917896-6fc0e900-14ae-11ea-9e3c-b2b6ec21fe95.PNG)
+## 프로젝트 사용 방법
+#### OpenCV와 pytesseract가 설치되어있어야 합니다.
+#### 1.디지털 텍스트로 변환하고 싶은 이미지를 프로젝트 폴더에 삽입 
+#### 2.OCR.py 파일을 실행하여, 밑줄친 부분을 이미지 이름으로 변경
+#### 3.F5버튼을 클릭해 실행
 
