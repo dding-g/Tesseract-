@@ -15,10 +15,6 @@
 #### 클러스터는 전반적인 연산을 담당하며 낮은 가격에 최대한의 효율을 도출해 내기 위해 구성하였다. 
 ## Project Result
 #### 프로젝트 다이어그램
-![그림1](https://user-images.githubusercontent.com/50908416/69917130-13f26200-14a6-11ea-8c36-b8e7088f3ec3.png)
-#### 이미지 전처리
-![그림4](https://user-images.githubusercontent.com/50908416/69917138-240a4180-14a6-11ea-96c6-2d36555c882f.png){: width="80%" height="80%"}
-#### 디지털 텍스트로 변환
-![그림5](https://user-images.githubusercontent.com/50908416/69917141-253b6e80-14a6-11ea-8667-b4edd5a199a1.png){: width="80%" height="80%"}
+
 
 
