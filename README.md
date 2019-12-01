@@ -8,16 +8,11 @@
 ## 사용한 오픈소스
 #### Tesseract : https://github.com/tesseract-ocr/tesseract
 #### OpenCV 4.1.2 : https://github.com/opencv
+#### 네이버 맞춤법 검사기
 ## Project Info
-#### 
-
-## 보안할점
-### Tesseract를 이용한 한글 검출의 정확도가 낮아 정확도를 높일 필요가 
-
-![image](https://user-images.githubusercontent.com/29707967/69437316-6c2eb300-0d86-11ea-8bbd-b9606e88663c.png)
-
-
-
+#### 사진 속의 텍스트를 디지털 텍스트로 변환한 뒤에 인식률을 높이기 위해서 OpenCV를 사용해 이미지를 전처리한다.
+#### 그 다음, 전처리한 이미지를 Tesseract를 사용해 디지털 텍스트로 변한한다.
+#### 마지막으로, 네이버 맞춤법 검사기를 사용해 맞춤법까지 검사한다.
 
 
 
