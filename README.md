@@ -9,7 +9,7 @@
 ## 사용한 오픈소스
 #### Tesseract : https://github.com/tesseract-ocr/tesseract
 #### OpenCV 4.1.2 : https://github.com/opencv
-#### 네이버 맞춤법 검사기
+#### MPICH 3.2 https://mpich.org
 ## Project Info
 #### 사진 속의 텍스트를 디지털 텍스트로 변환한 뒤에 인식률을 높이기 위해서 OpenCV를 사용해 이미지를 전처리하고, 
 #### 전처리한 이미지를 Tesseract를 사용해 디지털 텍스트로 변한합니다.
