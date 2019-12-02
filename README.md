@@ -33,7 +33,7 @@
 #### cc -o parell_task.o -I/usr/include/python2.7 parell_task.c -lpython2.7
 ### run
 #### mpirun -np 4 -f machinefile ./parell_task.o
-
+![image](https://user-images.githubusercontent.com/50908416/70001141-dd990d80-159f-11ea-97dd-01ce61341e2f.png)
 ## 프로젝트 필요성 및 활용방안
 ##### 대량의 아날로그 텍스트를 디지털 텍스트로 변환할 때 간편하게 사용할 수 있습니다.
 ##### 한글로 작성된 고서 같은 오래된 문서들을 디지털 파일로 변환하고, 
