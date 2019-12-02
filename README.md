@@ -27,7 +27,7 @@
 #### * 전처리 후 파일
 ![전처리](https://user-images.githubusercontent.com/50908416/69917894-6e8fbc00-14ae-11ea-8643-b1f7602b5f32.PNG)
 #### * 결과물
-![최종 결과](https://user-images.githubusercontent.com/50908416/69917896-6fc0e900-14ae-11ea-9e3c-b2b6ec21fe95.PNG)
+![image](https://user-images.githubusercontent.com/50908416/69995253-18487900-1593-11ea-8fcb-c7a11816d51c.png)
 ## 프로젝트 사용 방법
 #### ** OpenCV와 pytesseract가 설치되어있어야 합니다 **
 #### 1.디지털 텍스트로 변환하고 싶은 이미지를 프로젝트 폴더에 삽입 
