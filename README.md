@@ -6,8 +6,11 @@
 #### 조명근 : 영상처리, Tesseract
 #### 이용하 : 클러스터 구성 및 맞춤법 검사
 #### 노영진 : 아날로그데이터 수집 및 영상처리
-## 사용한 오픈소스
-#### Tesseract : https://github.com/tesseract-ocr/tesseract
+## 개발 환경 및 사용한 오픈소스
+#### Raspberry 4
+#### Raspbian buster
+#### Python 3.7
+#### Tesseract 4 : https://github.com/tesseract-ocr/tesseract
 #### OpenCV 4.1.2 : https://github.com/opencv
 #### MPICH 3.2 https://mpich.org
 ## Project Info
