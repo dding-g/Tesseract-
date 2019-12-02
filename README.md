@@ -29,11 +29,11 @@
 #### * 결과물
 ![image](https://user-images.githubusercontent.com/50908416/69995253-18487900-1593-11ea-8fcb-c7a11816d51c.png)
 ## 프로젝트 사용 방법
-#### ** OpenCV와 pytesseract가 설치되어있어야 합니다 **
-#### 1.디지털 텍스트로 변환하고 싶은 이미지를 프로젝트 폴더에 삽입 
-#### 2.OCR.py 파일을 실행하여, 밑줄친 부분을 이미지 이름으로 변경
-![밑줄](https://user-images.githubusercontent.com/50908416/69917987-e4485780-14af-11ea-8a27-e01406927058.PNG)
-#### 3.F5버튼을 클릭해 실행
+### compile
+#### cc -o parell_task.o -I/usr/include/python2.7 parell_task.c -lpython2.7
+### run
+#### mpirun -np 4 -f machinefile ./parell_task.o
+
 ## 프로젝트 필요성 및 활용방안
 ##### 대량의 아날로그 텍스트를 디지털 텍스트로 변환할 때 간편하게 사용할 수 있습니다.
 ##### 한글로 작성된 고서 같은 오래된 문서들을 디지털 파일로 변환하고, 
