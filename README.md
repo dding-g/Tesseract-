@@ -1,7 +1,7 @@
 # Hallym University [시스템 프로그래밍]
 ## Subject
 #### RasberryPi 4 Cluster, Tesseract, OpenCV, 네이버 맞춤법 검사기를 이용하여 
-#### 사진속의 텍스트를 디지털 텍스트로 변환후 맞춤법 검사하기
+#### 사진속의 텍스트를 디지털 텍스트로 변환후 맞춤법 검사
 ## Developer
 #### 조명근 : 영상처리, Tesseract
 #### 이용하 : 클러스터 구성 및 맞춤법 검사
