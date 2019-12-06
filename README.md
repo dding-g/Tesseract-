@@ -3,7 +3,7 @@
 #### RasberryPi 4 Cluster, Tesseract, OpenCV, 네이버 맞춤법 검사기를 이용하여 
 #### 사진속의 텍스트를 디지털 텍스트로 변환후 맞춤법 검사
 ## Developer
-#### 조명근 : 영상처리, Tesseract
+#### 조명근 : 영상처리, Tesseract, Back-end, Front-end
 #### 이용하 : 클러스터 구성 및 맞춤법 검사
 #### 노영진 : 아날로그데이터 수집 및 영상처리
 ## 개발 환경 및 사용한 오픈소스
