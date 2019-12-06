@@ -9,6 +9,7 @@
 ## 개발 환경 및 사용한 오픈소스
 #### Raspberry 4
 #### Raspbian buster
+#### Apache
 #### Python 3.7
 #### Tesseract 4 : https://github.com/tesseract-ocr/tesseract
 #### OpenCV 4.1.2 : https://github.com/opencv
