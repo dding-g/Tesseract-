@@ -1,1 +1,273 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title style = "color : gray">K-Spell Checker</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+  <style>
+  
+  .loader {
+  color: #000000;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" >
+
+      </br>
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">K-Spell Checker<sup> Beta</sup></div>
+      </a>
+
+      </br></br></br></br></br></br></br>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Developer</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+        <div class="sidebar-brand-text mx-3" style = "color : white ; font-weight : bold ; text-align : center">조명근<sup>&nbsp&nbsp&nbspBig Data</sup></div>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+        <div class="sidebar-brand-text mx-3" style = "color : white ; font-weight : bold ; text-align : center">이용하<sup>&nbsp&nbsp&nbspSmart IoT</sup></div>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+        <div class="sidebar-brand-text mx-3" style = "color : white ; font-weight : bold ; text-align : center">노영진<sup>&nbsp&nbsp&nbspContents IT</sup></div>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+<div class="container-fluid">
+  <div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4" style = "margin-left : 20%; margin-top : 3%" >
+            <div class="card bg-warning text-white shadow" style = "background-color : #FFFFFF !important ; margin : 10px; border-style: solid; border-width: 6px; border-color: #68de8b;">
+                        <div class = "card-body" style = " text-align:center">
+                            <label> 이미지 </label></br>
+                            <form id = "img_display">
+                                <img src = "" id = "upload_img" name = "upload_img" style = "width : 500px ; height : 350px"/>
+                            </form>
+                        </div>
+
+                      <div class = "card-body" style = " text-align:center">
+                        <form name="upload_file_form" id = "upload_file_form" action="" method="post" enctype="multipart/form-data">  
+                            <input type="file" id = "file_upload" name = "file_upload" values = "Image Choose"/>
+                            <button id = 'btn-upload' name = 'btn-upload' class = 'btn' style = "margin : 10px ; width : 100px; background-color:#68de8b;">Send</button>
+                        </form>
+                      </div> 
+
+            </div>
+
+            
+            <div class="card bg-warning text-white shadow" style = "background-color : #FFFFFF !important ; margin : 10px ; border-style: solid ;border-width: 6px; border-color: #68de8b;">
+                      <div class = "card-body" style = " text-align:center">
+                        <label type="file" id = "file_upload" name = "file_upload" values = "Image Choose"></label></br>
+                        <textarea id = "result" name = "result" style = "width:70% ;height:100%;"></textarea>
+                      </div> 
+                      <div id = "loader" class="loader" style = "visibility:hidden">Loading...</div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+    
+
+  </div>
+
+</div>
+      
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <form id = 'sign_out_form'>
+            <input type = "submit" class="btn btn-primary" value="Logout">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn-upload").click(function(){
+        event.preventDefault();
+        var fd = new FormData();
+        var files = $('#file_upload')[0].files[0];
+        fd.append('file_upload',files);
+        $("#loader").css("visibility", "visible");
+        $.ajax({
+            url: 'http://211.33.38.166/index.php',
+            type: 'post',
+            data: fd,
+            contentType: false,
+            processData: false,
+            success: function(response){
+              alert("asdfasf");
+                if(response != 0){
+                  $("#result").val(response);
+                  $("#loader").css("visibility", "hidden");
+                }else{
+                    alert('file not uploaded');
+                    $("#loader").css("visibility", "hidden");
+                }
+            }
+        });
+    });
+});
+
+$("#file_upload").change(function(){
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    $('#upload_img').attr('src', e.target.result);
+  }
+  reader.readAsDataURL($('#file_upload')[0].files[0]);
+});
+</script>
+
+
+</html>
