@@ -28,22 +28,22 @@
 4.  클러스터는 전반적인 연산을 담당하며, 낮은 가격에 최대한의 효율을 도출해 내기 위해 구성하였음. 
 ## 🥕 Project Result
 * 라즈베리파이4 클러스터
-    * [image](https://user-images.githubusercontent.com/29707967/82061388-9ba1f500-9703-11ea-8261-2313ab5a4619.png)
+    * ![image](https://user-images.githubusercontent.com/29707967/82061388-9ba1f500-9703-11ea-8261-2313ab5a4619.png)
 * 프로젝트 다이어그램
-    * [image](https://user-images.githubusercontent.com/50908416/70037432-e5859b80-15f9-11ea-9389-5ce549cb98a3.png)
+    * ![image](https://user-images.githubusercontent.com/50908416/70037432-e5859b80-15f9-11ea-9389-5ce549cb98a3.png)
 * 원본 파일
-    * [원본](https://user-images.githubusercontent.com/50908416/69917893-6df72580-14ae-11ea-84a7-58eed32f9519.jpg)
+    * ![원본](https://user-images.githubusercontent.com/50908416/69917893-6df72580-14ae-11ea-84a7-58eed32f9519.jpg)
 * 전처리 후 파일
-    * [전처리](https://user-images.githubusercontent.com/50908416/69917894-6e8fbc00-14ae-11ea-8643-b1f7602b5f32.PNG)
+    * ![전처리](https://user-images.githubusercontent.com/50908416/69917894-6e8fbc00-14ae-11ea-8643-b1f7602b5f32.PNG)
 * 결과물
-    * [image](https://user-images.githubusercontent.com/50908416/69995253-18487900-1593-11ea-8fcb-c7a11816d51c.png)
+    * ![image](https://user-images.githubusercontent.com/50908416/69995253-18487900-1593-11ea-8fcb-c7a11816d51c.png)
 
 ## 프로젝트 사용 방법
 * compile
 `cc -o parell_task.o -I/usr/include/python2.7 parell_task.c -lpython2.7`
 * run
 `mpirun -np 4 -f machinefile ./parell_task.o`
-![image](https://user-images.githubusercontent.com/50908416/70001141-dd990d80-159f-11ea-97dd-01ce61341e2f.png)
+* ![image](https://user-images.githubusercontent.com/50908416/70001141-dd990d80-159f-11ea-97dd-01ce61341e2f.png)
 ## 프로젝트 필요성 및 활용방안
 * 대량의 아날로그 텍스트를 디지털 텍스트로 변환할 때 간편하게 사용할 수 있습니다.
 * 한글로 작성된 고서 같은 오래된 문서들을 디지털 파일로 변환하고, 
